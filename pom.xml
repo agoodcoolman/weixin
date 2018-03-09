@@ -85,7 +85,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>-->
-        <!-- 高贵的html才有的内容  -->
+        <!-- 高贵的返回 html 才有的内容  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>

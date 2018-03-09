@@ -17,7 +17,6 @@ public class ErrorHello {
     @ResponseBody
     public String home() {
         String out = "gegeg";
-
         return out;
     }
 

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>获取用户授权</title>
+</head>
+<body>
+<h1><a th:text="'获取用户授权' + ${appid}" th:href="@{'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+ ${appid}+ '&redirect_uri='+ ${redirect_uri}+ '&response_type=code' + '&scope=' + ${scope} + '&state=' + ${state} + '#wechat_redirectx'}">
+    </a></h1>
+</body>
+</html>
