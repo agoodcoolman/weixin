@@ -1,5 +1,6 @@
 package com.jin.weixin.init;
 
+import com.jin.weixin.service.WxServiceUtil;
 import com.soecode.wxtools.api.IService;
 import com.soecode.wxtools.api.WxConfig;
 import com.soecode.wxtools.api.WxService;
@@ -16,7 +17,8 @@ import java.util.LinkedList;
  */
 public class ApplicationStartup implements ApplicationListener<ContextRefreshedEvent> {
     //实例化 统一业务API入口
-    private IService iService = new WxService();
+    private IService iService = WxServiceUtil.getInstance();
+
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
 
